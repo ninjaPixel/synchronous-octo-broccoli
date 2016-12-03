@@ -1,2 +1,2 @@
 # synchronous-octo-broccoli
-Iterate over a collection of promises, synchronously. 
+Execute and array of promises, synchronously. 

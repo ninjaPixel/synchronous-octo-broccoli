@@ -1,0 +1,30 @@
+{
+  "name": "synchronous-octo-broccoli",
+  "version": "1.0.0",
+  "description": "Execute and array of promises, synchronously.",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "mocha js/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ninjaPixel@github.com/ninjaPixel/synchronous-octo-broccoli.git"
+  },
+  "keywords": [
+    "promise",
+    "synchronous"
+  ],
+  "author": "Matt Michel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjaPixel/synchronous-octo-broccoli/issues"
+  },
+  "homepage": "https://github.com/ninjaPixel/synchronous-octo-broccoli#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "mocha": "^3.2.0"
+  }
+}
