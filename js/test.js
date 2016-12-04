@@ -31,4 +31,32 @@ describe("Iterate the arrayOfPromises", function () {
             assert.equal(testString, '123');
         });
     });
+
+    it("Promise rejections should be handled", function () {
+        var testString = '';
+        var arrayOfPromises = [function () {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    testString += '1';
+                    resolve();
+                }, 10);
+            });
+        }, function () {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    reject('I am an error');
+                }, 200);
+            });
+        }, function () {
+            return new Promise(function (resolve, reject) {
+                testString += '3';
+                resolve(testString);
+            });
+        }];
+        var testPromise = sob(arrayOfPromises);
+        return testPromise.then(function (result) {}).catch(function (err) {
+            assert.equal(err, 'I am an error');
+            assert.equal(testString, '1');
+        });
+    });
 });

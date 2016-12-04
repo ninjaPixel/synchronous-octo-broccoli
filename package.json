@@ -1,6 +1,6 @@
 {
   "name": "synchronous-octo-broccoli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Execute an array of promises, synchronously.",
   "main": "./js/index.js",
   "scripts": {
