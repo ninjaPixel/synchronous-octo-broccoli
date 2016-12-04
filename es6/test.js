@@ -21,14 +21,14 @@ describe("Iterate the arrayOfPromises", function () {
                         resolve();
                     }, 200);
                 });
-                
+
             },
             ()=> {
                 return new Promise((resolve, reject)=> {
                     testString += '3';
                     resolve(testString);
                 });
-                
+
             }];
         const testPromise = sob(arrayOfPromises);
         return testPromise.then(function (result) {
