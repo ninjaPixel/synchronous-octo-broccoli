@@ -1,4 +1,5 @@
 # synchronous-octo-broccoli
+[![Build Status](https://travis-ci.org/ninjaPixel/synchronous-octo-broccoli.svg?branch=master)](https://travis-ci.org/ninjaPixel/synchronous-octo-broccoli)
 Execute an array of promises, synchronously.
     
     npm install synchronous-octo-broccoli
